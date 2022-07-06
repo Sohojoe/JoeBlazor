@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoeBlazor.Server", "JoeBlaz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoeBlazor.Wasm", "JoeBlazor.Wasm\JoeBlazor.Wasm.csproj", "{D92086FC-AA27-47C3-8CAD-0C996AF0D3A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoeBlazor.Shared", "JoeBlazor.Shared\JoeBlazor.Shared.csproj", "{2B17A50F-5917-4421-90FB-9D1563DC6F2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D92086FC-AA27-47C3-8CAD-0C996AF0D3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D92086FC-AA27-47C3-8CAD-0C996AF0D3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D92086FC-AA27-47C3-8CAD-0C996AF0D3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B17A50F-5917-4421-90FB-9D1563DC6F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B17A50F-5917-4421-90FB-9D1563DC6F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B17A50F-5917-4421-90FB-9D1563DC6F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B17A50F-5917-4421-90FB-9D1563DC6F2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

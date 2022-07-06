@@ -1,4 +1,4 @@
-namespace JoeBlazor.Server.Data
+namespace JoeBlazor.Shared.Data
 {
     public class WeatherForecastService
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using JoeBlazor.Server.Data;
+using JoeBlazor.Shared.Data;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
