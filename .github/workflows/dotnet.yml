@@ -29,3 +29,13 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: release/wwwroot
+    # fix for errors: Failed to load resource: net::ERR_FILE_NOT_FOUND
+    # changes the base-tag in index.html from '/' to 'JoeBlazor' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html from / to JoeBlazor
+      run: sed -i 's/<base href="\/" \/>/<base href="\/JoeBlazor\/" \/>/g' release/wwwroot/index.html
+    # fix for GitHub Pages by default expects you to use the Jekyll static site generator. As part of this default, 
+    #   GitHub pages will not serve any files or folder starting with and underscore.
+    # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. 
+    #   (Allow files and folders starting with an underscore)
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
