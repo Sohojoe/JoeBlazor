@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 6.0.6
+        dotnet-version: 6.0
     # goto correct folder
     - name: goto Wasm Folder
       run: cd src/JoeBlazor.Wasm/
