@@ -1,2 +1,2 @@
 # JoeBlazor
-A Simple MudBlazor sample project that uses shared pages/controls for both WASM and Server
+A Simple [MudBlazor](https://mudblazor.com) sample project that uses shared pages/controls for both WASM and Server
