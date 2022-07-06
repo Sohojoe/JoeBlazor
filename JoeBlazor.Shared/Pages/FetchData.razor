@@ -1,6 +1,9 @@
 ﻿@page "/fetchdata"
 @using JoeBlazor.Shared.Data
+@*if server side*@
 @inject WeatherForecastService ForecastService
+@*else if wasm *@
+@inject HttpClient Http
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -37,6 +40,12 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+
+        @*if server side*@
         forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        @*else if wasm *@
+        @*note: this should work but could not be arsed how to figure out how to tell
+            if i'm in server or wasm *@
+        @*forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");*@
     }
 }
